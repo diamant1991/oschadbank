@@ -446,17 +446,18 @@ ul li{
 	-o-webkit-border-radius: 3px;
 	border-radius: 3px;
 	padding: 0 1px;
-	margin-bottom: 10px;
+	margin-top: 15px;
 }
 .news fieldset ul li a{
 	font-family: 'Trebuchet Ms', sans-serif;
 	font-size: 14px;
 	color: #005931;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	text-decoration: underline;
 }
 	.news fieldset ul li{
-		margin-top: 15px;
+	
 	}
 	
 	.all-news{
@@ -681,6 +682,13 @@ ul li{
 	.footer p{
 		margin-bottom: 0;
 	}
+#content-block-hidden{
+	display: none;
+}
+#services-hidden{
+	display: none;
+}
+
 .footer-oschad{
 	color: #627d00;
 }
@@ -767,7 +775,18 @@ ul li{
 
 
 	}
-
+@media (min-width: 768px) and (max-width: 991px){
+	.oschad-menu a{
+		padding-left: 0;
+	}
+	.oschad-menu a span{
+		left: 60px;
+		top: -45px;
+	}
+	.branch{
+		top: -37px !important;
+	}
+}
 @media (min-width: 768px){
 
 	fieldset div.collapse,.registration .collapse {
@@ -1061,9 +1080,30 @@ ul li{
 				width: 150px;
 			}
 			.after-top-panel{
-	margin-top: 0;
-	margin-bottom: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			}
+	.oschad-menu a{
+		text-align: center;
+	}
+	.oschad-menu a span{
+		text-align: left;
+	}
+	.news fieldset ul li a{
+		display: inline-block;
+	}
+	.all-news{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.small-block{
+		width: 380px;
+		margin: auto;
+	}
 }
-
+@media(max-width: 420px){
+	.small-block{
+		width: auto;
+	}
 }
 

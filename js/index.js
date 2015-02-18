@@ -70,7 +70,39 @@ $('.arrow').click(function(){
   } 
   
   })
+$('.view').click(function(){
+      
+  if ($("#content-block-hidden").css("display") == "none") {
+    $("#content-block-hidden").attr("display","block");
+    $(this).text('Згорнути')
+    $("#content-block-hidden").slideDown(300);
 
+  }
+  else {
+    $("#content-block-hidden").slideUp(300);
+    $(this).text('Розгорнути');
+ 
+    $("#content-block-hidden").attr("display","none");
+  } 
+  
+  })
+$('.view-small').click(function(){
+      
+  if ($("#services-hidden").css("display") == "none") {
+    $("#services-hidden").attr("display","block");
+    $(this).text('Згорнути')
+    $("#services-hidden").slideDown(200);
+
+  }
+  else {
+    $("#services-hidden").slideUp(200);
+    $(this).text('Розгорнути');
+ 
+    $("#services-hidden").attr("display","none");
+  } 
+  
+  })
+ 
 
 
     });
