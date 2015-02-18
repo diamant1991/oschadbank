@@ -75,13 +75,14 @@ $('.view').click(function(){
   if ($("#content-block-hidden").css("display") == "none") {
     $("#content-block-hidden").attr("display","block");
     $(this).text('Згорнути')
+    $(this).css("background-image","url(images/zg.jpg)")
     $("#content-block-hidden").slideDown(300);
 
   }
   else {
     $("#content-block-hidden").slideUp(300);
     $(this).text('Розгорнути');
- 
+    $(this).css("background-image","url(images/roz.jpg)")
     $("#content-block-hidden").attr("display","none");
   } 
   
@@ -90,14 +91,15 @@ $('.view-small').click(function(){
       
   if ($("#services-hidden").css("display") == "none") {
     $("#services-hidden").attr("display","block");
-    $(this).text('Згорнути')
+    $(this).text('Згорнути');
+    $(this).css("background-image","url(images/zg.jpg)")
     $("#services-hidden").slideDown(200);
 
   }
   else {
     $("#services-hidden").slideUp(200);
     $(this).text('Розгорнути');
- 
+    $(this).css("background-image","url(images/roz.jpg)")
     $("#services-hidden").attr("display","none");
   } 
   

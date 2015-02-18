@@ -501,7 +501,8 @@ ul li{
 .reveal span{
 	display: inline-block;
 	padding:1px 0 2px 30px;
-	background: url(../images/roz.jpg)no-repeat;
+	background-image: url(../images/roz.jpg);
+	background-repeat: no-repeat;
 	cursor: pointer;
 	color: #919c71;
 	font-family: 'Trebuchet Ms', sans-serif;
