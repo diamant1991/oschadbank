@@ -59,17 +59,44 @@ $('.arrow').click(function(){
     $(".row-hidden").attr("display","block");
     $(this).css("background-image","url(images/arrow-top.jpg)");
     $(".exchange-rates table").css("border-right","1px solid #fff");
+    $('.converter-toogle').css("text-decoration","none");
     $(".row-hidden").show();
-
   }
   else {
     $(".row-hidden").hide();
     $(this).css("background-image","url(images/arrow-bottom.png)");
     $(".exchange-rates table").css("border-right","0");
+    $('.converter-toogle').css("text-decoration","underline");
     $(".row-hidden").attr("display","none");
   } 
   
   })
+$('.converter-toogle').click(function(){
+      
+  if ($(".row-hidden").css("display") == "none") {
+    $(".row-hidden").attr("display","block");
+    $(this).css("text-decoration","none");
+    $('.arrow').css("background-image","url(images/arrow-top.jpg)");
+    $(".exchange-rates table").css("border-right","1px solid #fff");
+    $(".row-hidden").show();
+  }
+  else {
+    $(".row-hidden").hide();
+    $(this).css("text-decoration","underline");
+    $(".exchange-rates table").css("border-right","0");
+    $('.arrow').css("background-image","url(images/arrow-bottom.png)");
+    $(".row-hidden").attr("display","none");
+  } 
+  
+  })
+
+
+
+
+
+
+
+
 $('.view').click(function(){
       
   if ($("#content-block-hidden").css("display") == "none") {
@@ -104,7 +131,19 @@ $('.view-small').click(function(){
   } 
   
   })
- 
+$('.currency-collapse').click(function(){
+      
+  if ($("#currency-collapse").css("display") == "none") {
+    $("#currency-collapse").attr("display","block");
+    $("#currency-collapse").slideDown(300);
+
+  }
+  else {
+    $("#currency-collapse").slideUp(300);
+    $("#currency-collapse").attr("display","none");
+  } 
+  
+  }) 
 
 
     });

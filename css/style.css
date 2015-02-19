@@ -395,7 +395,9 @@ ul li{
 		border-bottom: 1px solid #fff;
 		padding: 15px 0;
 	}
-
+	.exchange-rates table tr{
+		cursor:pointer;
+	}
 	.banks{
 		text-transform: uppercase;
 		color: #2e4d14;
@@ -478,6 +480,12 @@ ul li{
 		font-size: 21px;
 		color: #374500;
 	}
+.converter-toogle{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
 .services{
 	text-align: center;
 	padding-top: 40px;
@@ -529,12 +537,12 @@ ul li{
 	padding: 5px 15px;
 	margin: 0;
 	border: dashed 1px gray;
-	background-color: #e8ebd8;
+	background-color: #fff;
 	text-decoration: none;
 	border-bottom: 0;
 }
 .switches a.active, .switches a.active:hover, .switches a.active:focus {
-	background: none;
+	background: #e8ebd8;
 	border-bottom: none;
 }
 
@@ -618,6 +626,15 @@ ul li{
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
+.my-studio-link{
+	font-family: 'Trebuchet Ms', sans-serif;
+	font-size: 13px;
+	color:#435600;
+}
+	.my-studio-link:hover{
+		text-decoration:underline;
+		color:#435600;
+}
 .select{
 	vertical-align: middle;
 	display: inline-block;
@@ -653,6 +670,143 @@ ul li{
 	padding-right: 24px;
 	padding-left: 15px;
 }
+.services-link{
+	display: inline-block;
+	width: 132px;
+	height: 132px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+	 .dropdown-menu:before {
+		content: '';
+		display: block;
+		width: 40%;
+		height: 8px;
+		margin-top: -8px;
+		background: #005030;
+}	
+.dropdown-menu {
+	border: 0;
+	background: #005030;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #53BB64), color-stop(1, #005030));
+	background: -ms-linear-gradient(bottom, #53BB64, #005030);
+	background: -moz-linear-gradient(center bottom, #53BB64 0%, #005030 100%);
+	background: -o-linear-gradient(#005030, #53BB64);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005030', endColorstr='#53BB64', GradientType=0);
+}
+
+	.dropdown-menu a {
+	color: #ffffff;
+	text-decoration: underline;
+	}
+	#dropdown-menu a,#dropdown-menu-2 a{
+		text-decoration: underline;
+	}
+		#dropdown-menu a:hover,#dropdown-menu-2 a:hover{
+		text-decoration: none;
+	}
+	.dropdown-menu ul li a {
+		line-height: 1.3em;
+		font-size: 14px;
+		}
+		.dropdown-menu ul li,#dropdown-menu ul li,#dropdown-menu-2 ul li {
+		padding-bottom: 1em;
+}
+#dropdown-menu ul,#dropdown-menu-2 ul{
+	padding-top: 10px;
+}
+
+	.dropdown-menu > ul li:before,#dropdown-menu ul li:before{
+	content: '\25b8';
+	color: #53BB64;
+	padding-right: 1em;
+	margin-left: -1.5em;
+}
+#dropdown-menu-2 ul li:before{
+	content: '\25b8';
+	color: yellow;
+	padding-right: 1em;
+	margin-left: -1.5em;
+}
+.dropdown-menu ul {
+padding-left: 3em;
+}
+.dropdown-left{
+	left: 2px !important;
+}
+.dropdown-menu > .yellow li:before{
+	color: yellow !important
+}
+.padding-left-2em{
+	padding-left: 2em !important;
+}
+.icon-chevron-down {
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	width: 14px;
+	height: 8px;
+	background: url('../images/sprite_oschad.png') no-repeat;
+	background-position: -65px -172px;
+}
+.dropdown .white{
+	margin-left: 10px;
+}
+.deposit{
+	background: url(../images/pig.png)no-repeat;
+}
+	.deposit:hover{
+	background: url(../images/pig.hov.png)no-repeat;
+}
+.credit_cart{
+	background: url(../images/credit_cart.png)no-repeat;
+}
+	.credit_cart:hover{
+	background: url(../images/credit_cart-hover.png)no-repeat;
+}
+.energo_credit{
+	background: url(../images/energo_credit.png)no-repeat;
+}
+	.energo_credit:hover{
+	background: url(../images/energo-hover.png)no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+.premium_cart{
+	background: url(../images/premium_cart.png)no-repeat;
+}
+	.premium_cart:hover{
+	background: url(../images/premium-hover.png)no-repeat;
+}
+.we-progress{
+	background: url(../images/progress.png)no-repeat;
+}
+	.we-progress:hover{
+		background: url(../images/progress-hover.png)no-repeat;
+	}
+.financial_learn{
+	background: url(../images/financial_learn.png)no-repeat;
+}
+.pension_card{
+	background: url(../images/pension_card.png)no-repeat;
+}
+.salary_cards{
+	background: url(../images/salary_cards.png)no-repeat;
+}
+.remittances{
+	background: url(../images/remittances.png)no-repeat;
+}
+.row-hidden{
+		display: none;
+		padding-bottom: 35px;
+}
+
+
+
 .arrow-table{
 	padding: 0 10px !important;
 	vertical-align: middle;
@@ -715,6 +869,10 @@ ul li{
 .social-link{
 	margin-top: 10px;
 }
+.text-align{
+	text-align: right !important;
+	padding-right: 30px !important;
+}
 .icon{
 	background-image: url('../images/sprite_oschad.png');
 	background-repeat: no-repeat;
@@ -769,10 +927,7 @@ ul li{
 	.main-indicators legend{
 		padding-bottom: 10px;
 	}
-	.row-hidden{
-		display: none;
-		padding-bottom: 35px;
-}
+	
 
 
 	}
@@ -809,12 +964,11 @@ ul li{
 	}
 }
 @media (max-width: 1199px){
-	.arrow{
-		display: none;
-	}
+	
 	.converter{
-	width: 50%;
+	width: 230px;
 	margin: auto;
+	padding-left: 0;
 }
 	.converter-block{
 		padding-bottom: 15px;
@@ -832,11 +986,19 @@ ul li{
 	.result-total{
 		width: 110px;
 	}
+	.text-align{
+		padding-right: 50px !important;
+}
+
 }
 @media (max-width: 991px){
 	.icon-phone, .icon-envelope{
 		margin-left: 0;
 	}
+		.text-align{
+	
+	padding-right: 60px !important;
+}
 }
 @media(max-width: 767px){
 
@@ -858,6 +1020,9 @@ ul li{
 }
 .padding-top-5{
 	padding-top: 0;
+}
+#corporate_client, #privat_client{
+	cursor: pointer;
 }
 .oschad .navbar-toggle {
 	float: left;
@@ -954,7 +1119,7 @@ ul li{
 		position: relative;
 		z-index: 2;
 	}
-		.our-services legend{
+		.our-services legend, .currency-collapse{
 			margin-bottom: 0;
 			border: 0;
 			font-family: Georgia, Tahoma, sans-serif;
@@ -963,6 +1128,15 @@ ul li{
 			padding: 10px 0 10px 22px;
 			cursor: pointer;
 			background: #698e49;
+		}
+		.currency-collapse{
+			width: 100%;
+			display: block;	
+			color: #fff !important;	
+			border-bottom: 1px solid #fff;
+		}
+		#currency-collapse{
+			display: none;
 		}
 		.services{
 			padding-top: 20px;
