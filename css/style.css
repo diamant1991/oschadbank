@@ -858,6 +858,9 @@ padding-left: 3em;
 	.footer-border>.row{
 		padding: 0 15px;
 	}
+.small-block-currency{
+	width: 300px !important;
+}
 .footer-border-right{
 	border-right: 1px solid #ccd8af;
 	text-align: center;
@@ -1295,7 +1298,7 @@ padding-left: 3em;
 		margin-bottom: 10px;
 	}
 	.small-block{
-		width: 380px;
+		width: 360px;
 		margin: auto;
 	}
 }
