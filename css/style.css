@@ -942,6 +942,18 @@ padding-left: 3em;
 	.branch{
 		top: -37px !important;
 	}
+	.icon-call-24{
+		margin-left: 0;
+	}
+	.pull-right{
+		float: none !important;
+	}
+	.phonenumber{
+		text-align: center;
+	}
+	.phonenumber a{
+		display: inline-block;
+	}
 }
 @media (min-width: 768px){
 
@@ -998,6 +1010,17 @@ padding-left: 3em;
 		.text-align{
 	
 	padding-right: 60px !important;
+}
+.logo-small{
+	display: block;
+	width: 222px;
+	height: 52px;
+	margin: auto;
+	background: url(../images/logo-small.jpg);
+}
+.switch-small{
+	position: relative;
+	margin: auto;
 }
 }
 @media(max-width: 767px){
